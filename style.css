@@ -15,15 +15,13 @@ html {
 
 .text-s {
   position: absolute;
-  font-size: .8rem;
-  bottom: 1rem;
+  left: 1rem;
+
+    top: -0.5rem;
+  font-size: 0.6rem;
   left: 1rem;
   color: rgba(255, 255, 255, 0.5);
   font-weight: 400;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  transition: transform 0.3s ease 0s;
 }
 
 .text-s-right {
