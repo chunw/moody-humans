@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'Apercu';
+  font-family: 'Apercu'
   src: url('ApercuRegular.ttf') format('ttf');
   font-weight: 400;
 }
 
 html {
-  font-family: 'Apercu';
+  font-family: 'Apercu', Sans-serif;
   overflow-y: auto;
   background-image: linear-gradient(to right, #434343 0%, black 100%);
   font-size: 22px;
@@ -44,9 +44,8 @@ audio {
 }
 
 .card {
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
   color: white;
-  height: 10rem;
+  height: 4rem;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -54,17 +53,24 @@ audio {
 
 .card .title {
   padding: 1rem;
+  font-size: 22px;
 }
 
-.card:nth-child(3n+0) {
-  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+.card:nth-child(1n+0) {
+
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+
 }
 
-.card:nth-child(0n+4) {
+.card:nth-child(2n+0) {
   background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
 }
 
-.card:nth-child(0n+8) {
+.card:nth-child(3n+0) {
+    background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+}
+
+.card:nth-child(4n+0) {
   background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
 }
 
