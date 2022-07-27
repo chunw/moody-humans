@@ -21,6 +21,25 @@
   <div class="cards">
     <div class="card">
       <div class="slide">
+        <div class="text"></div>
+      </div>
+      <div class="title">Granaina</div>
+      <div class="text-s-right">Guitar</div>
+      <!-- <div class="text-s">
+        <h4 class="jsx-1746282597 category text-xs">Sound</h4>
+      </div> -->
+      <audio id="song" controls preload="auto" allow="autoplay">
+        <source src="audio/gradaina.mp3" controls>
+        </source>
+      </audio>
+      <audio id="song-preview" controls preload="auto" muted="muted" allow="autoplay">
+        <source src="audio/gradaina-1.mp3" controls>
+        </source>
+      </audio>
+    </div>
+
+    <div class="card">
+      <div class="slide">
         <div class="text">Notes</div>
       </div>
       <div class="title">Granaina</div>
@@ -39,12 +58,14 @@
     </div>
 
     <div class="card">
-      <div class="slide">Granaina</div>
+      <div class="slide">
+        <div class="text">Notes</div>
+      </div>
       <div class="title">Granaina</div>
       <div class="text-s-right">Guitar</div>
-      <div class="text-s">
+      <!-- <div class="text-s">
         <h4 class="jsx-1746282597 category text-xs">Sound</h4>
-      </div>
+      </div> -->
       <audio id="song" controls preload="auto" allow="autoplay">
         <source src="audio/gradaina.mp3" controls>
         </source>
@@ -55,14 +76,15 @@
       </audio>
     </div>
 
-
     <div class="card">
-      <div class="slide">Granaina</div>
+      <div class="slide">
+        <div class="text">Notes</div>
+      </div>
       <div class="title">Granaina</div>
       <div class="text-s-right">Guitar</div>
-      <div class="text-s">
+      <!-- <div class="text-s">
         <h4 class="jsx-1746282597 category text-xs">Sound</h4>
-      </div>
+      </div> -->
       <audio id="song" controls preload="auto" allow="autoplay">
         <source src="audio/gradaina.mp3" controls>
         </source>
@@ -73,14 +95,15 @@
       </audio>
     </div>
 
-
     <div class="card">
-      <div class="slide">Granaina</div>
+      <div class="slide">
+        <div class="text">Notes</div>
+      </div>
       <div class="title">Granaina</div>
       <div class="text-s-right">Guitar</div>
-      <div class="text-s">
+      <!-- <div class="text-s">
         <h4 class="jsx-1746282597 category text-xs">Sound</h4>
-      </div>
+      </div> -->
       <audio id="song" controls preload="auto" allow="autoplay">
         <source src="audio/gradaina.mp3" controls>
         </source>
@@ -91,90 +114,15 @@
       </audio>
     </div>
 
-
-
     <div class="card">
-      <div class="slide">Granaina</div>
+      <div class="slide">
+        <div class="text">Notes</div>
+      </div>
       <div class="title">Granaina</div>
       <div class="text-s-right">Guitar</div>
-      <div class="text-s">
+      <!-- <div class="text-s">
         <h4 class="jsx-1746282597 category text-xs">Sound</h4>
-      </div>
-      <audio id="song" controls preload="auto" allow="autoplay">
-        <source src="audio/gradaina.mp3" controls>
-        </source>
-      </audio>
-      <audio id="song-preview" controls preload="auto" muted="muted" allow="autoplay">
-        <source src="audio/gradaina-1.mp3" controls>
-        </source>
-      </audio>
-    </div>
-
-
-
-    <div class="card">
-      <div class="slide">Granaina</div>
-      <div class="title">Granaina</div>
-      <div class="text-s-right">Guitar</div>
-      <div class="text-s">
-        <h4 class="jsx-1746282597 category text-xs">Sound</h4>
-      </div>
-      <audio id="song" controls preload="auto" allow="autoplay">
-        <source src="audio/gradaina.mp3" controls>
-        </source>
-      </audio>
-      <audio id="song-preview" controls preload="auto" muted="muted" allow="autoplay">
-        <source src="audio/gradaina-1.mp3" controls>
-        </source>
-      </audio>
-    </div>
-
-
-
-    <div class="card">
-      <div class="slide">Granaina</div>
-      <div class="title">Granaina</div>
-      <div class="text-s-right">Guitar</div>
-      <div class="text-s">
-        <h4 class="jsx-1746282597 category text-xs">Sound</h4>
-      </div>
-      <audio id="song" controls preload="auto" allow="autoplay">
-        <source src="audio/gradaina.mp3" controls>
-        </source>
-      </audio>
-      <audio id="song-preview" controls preload="auto" muted="muted" allow="autoplay">
-        <source src="audio/gradaina-1.mp3" controls>
-        </source>
-      </audio>
-    </div>
-
-
-
-    <div class="card">
-      <div class="slide"></div>
-      <div class="title">Granaina</div>
-      <div class="text-s-right">Guitar</div>
-      <div class="text-s">
-        <h4 class="jsx-1746282597 category text-xs">Sound</h4>
-      </div>
-      <audio id="song" controls preload="auto" allow="autoplay">
-        <source src="audio/gradaina.mp3" controls>
-        </source>
-      </audio>
-      <audio id="song-preview" controls preload="auto" muted="muted" allow="autoplay">
-        <source src="audio/gradaina-1.mp3" controls>
-        </source>
-      </audio>
-    </div>
-
-
-    <div class="card">
-      <div class="slide">Granaina</div>
-      <div class="title">Granaina</div>
-      <div class="text-s-right">Guitar</div>
-      <div class="text-s">
-        <h4 class="jsx-1746282597 category text-xs">Sound</h4>
-      </div>
+      </div> -->
       <audio id="song" controls preload="auto" allow="autoplay">
         <source src="audio/gradaina.mp3" controls>
         </source>
@@ -189,17 +137,23 @@
   </div>
 
   <script>
+    let current;
     const play = $("#play")[0];
     $(".card").click((event) => {
+      if (current) {
+        current.pause();
+      }
+      current = play;
       play.play();
       const elem = $(event.target);
-      elem.parent().find("#song")[0].play();
+      current = elem.parent().find("#song")[0];
+      current.play();
     });
-    $(".card").hover((event) => {
-      console.log("hover");
-      const card = $(event.target);
-      card.find("#song-preview")[0].play();
-    });
+    // $(".card").hover((event) => {
+    //   console.log("hover");
+    //   const card = $(event.target);
+    //   card.find("#song-preview")[0].play();
+    // });
   </script>
 
 </body>
