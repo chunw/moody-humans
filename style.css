@@ -22,6 +22,15 @@ audio {
   display: none;
 }
 
+a {
+  position: fixed;
+  bottom: 4vw;
+  right: 4vw;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+
 .card:nth-child(1n+0) {
   background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
@@ -47,7 +56,7 @@ audio {
 
 .card {
   -webkit-box-shadow: 2px 3px 29px 5px #000000;
-box-shadow: 2px 3px 29px 5px #000000;
+  box-shadow: 2px 3px 29px 5px #000000;
   color: white;
   position: relative;
   overflow: hidden;
