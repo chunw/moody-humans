@@ -146,14 +146,9 @@
       current = play;
       play.play();
       const elem = $(event.target);
-      current = elem.parent().find("#song")[0];
+      current = elem.parent().find("#song-preview")[0];
       current.play();
     });
-    // $(".card").hover((event) => {
-    //   console.log("hover");
-    //   const card = $(event.target);
-    //   card.find("#song-preview")[0].play();
-    // });
   </script>
 
 </body>

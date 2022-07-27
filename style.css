@@ -5,6 +5,7 @@
 }
 
 html {
+  letter-spacing: -.02em;
   font-family: 'Apercu', Sans-serif;
   overflow-y: auto;
   background-image: linear-gradient(to right, #434343 0%, black 100%);
@@ -54,6 +55,7 @@ audio {
 .card .title {
   padding: 1rem;
   font-size: 22px;
+  font-style: italic;
 }
 
 .card:nth-child(1n+0) {
