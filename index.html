@@ -75,17 +75,22 @@
     </div>
   </div>
 
+  <video id="video" height="100%" width="100%" controls="controls" preload="none" onclick="this.play()">
+   <source type="video/webm">
+  </video>
+
   <script>
-    let current;
+    let video = $("#video");
+    video.hide();
     const play = $("#play")[0];
     $(".card").click((event) => {
-      if (current) {
-        //current.pause();
-      }
       play.play();
-      const elem = $(event.target);
-      current = elem.parent().find("#song")[0];
-      current.play();
+      video.attr("src", "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/54/Yawning_kitten.ogv/Yawning_kitten.ogv.480p.vp9.webm");
+      video.show();
+      video.trigger('play');
+      //const elem = $(event.target);
+      //current = elem.parent().find("#song")[0];
+      //current.play();
     });
   </script>
 
