@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Moody Humans</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <audio id="play" controls preload="auto" style="display:none">
+    <source src="audio/play.wav" controls>
+    </source>
+  </audio>
+
+  <div class="cards">
+    <div class="card">
+      <div class="slide">Some notes </div>
+      <div class="title">ONE</div>
+      <div class="text-s-right">Guitar</div>
+      <div class="text-s">
+        <h4 class="jsx-1746282597 category text-xs">Sound</h4>
+      </div>
+      <audio id="song" controls preload="auto" allow="autoplay">
+        <source src="audio/gradaina.mp3" controls>
+        </source>
+      </audio>
+      <audio id="song-preview" controls preload="auto" muted="muted" allow="autoplay">
+        <source src="audio/gradaina-1.mp3" controls>
+        </source>
+      </audio>
+
+    </div>
+    <div class="card">
+      <div class="slide">Some notes </div>
+      <div class="title">ONE</div>
+
+    </div>
+    <div class="card">
+      <div class="slide">Some notes </div>
+      <div class="title">ONE</div>
+      <audio id="beep" controls preload="auto">
+        <source src="audio/beep.mp3" controls>
+        </source>
+        <source src="audio/beep.ogg" controls>
+        </source>
+      </audio>
+    </div>
+    <div class="card">
+      <div class="slide">Some notes </div>
+      <div class="title">ONE</div>
+      <audio id="beep" controls preload="auto">
+        <source src="audio/beep.mp3" controls>
+        </source>
+        <source src="audio/beep.ogg" controls>
+        </source>
+      </audio>
+    </div>
+    <div class="card">
+      <div class="slide">Some notes </div>
+      <div class="title">ONE</div>
+      <audio id="beep" controls preload="auto">
+        <source src="audio/beep.mp3" controls>
+        </source>
+        <source src="audio/beep.ogg" controls>
+        </source>
+      </audio>
+    </div>
+    <div class="card">
+      <div class="slide">Some notes </div>
+      <div class="title">ONE</div>
+      <audio id="beep" controls preload="auto">
+        <source src="audio/beep.mp3" controls>
+        </source>
+        <source src="audio/beep.ogg" controls>
+        </source>
+      </audio>
+    </div>
+    <div class="card">
+      <div class="slide">Some notes </div>
+      <div class="title">ONE</div>
+      <audio id="beep" controls preload="auto">
+        <source src="audio/beep.mp3" controls>
+        </source>
+        <source src="audio/beep.ogg" controls>
+        </source>
+      </audio>
+    </div>
+    <div class="card">
+      <div class="slide">Some notes </div>
+      <div class="title">ONE</div>
+      <audio id="beep" controls preload="auto">
+        <source src="audio/beep.mp3" controls>
+        </source>
+        <source src="audio/beep.ogg" controls>
+        </source>
+      </audio>
+    </div>
+    <div class="card">
+      <div class="slide">Some notes </div>
+      <div class="title">ONE</div>
+      <audio id="beep" controls preload="auto">
+        <source src="audio/beep.mp3" controls>
+        </source>
+        <source src="audio/beep.ogg" controls>
+        </source>
+      </audio>
+    </div>
+    <div class="card">
+      <div class="slide">Some notes </div>
+      <div class="title">ONE</div>
+      <audio id="beep" controls preload="auto">
+        <source src="audio/beep.mp3" controls>
+        </source>
+        <source src="audio/beep.ogg" controls>
+        </source>
+      </audio>
+    </div>
+    <div class="card">
+      <div class="slide">Some notes </div>
+      <div class="title">ONE</div>
+      <audio id="beep" controls preload="auto">
+        <source src="audio/beep.mp3" controls>
+        </source>
+        <source src="audio/beep.ogg" controls>
+        </source>
+      </audio>
+    </div>
+    <div class="card">
+      <div class="slide">Some notes </div>
+      <div class="title">ONE</div>
+      <audio id="beep" controls preload="auto">
+        <source src="audio/beep.mp3" controls>
+        </source>
+        <source src="audio/beep.ogg" controls>
+        </source>
+      </audio>
+    </div>
+    <div class="card">
+      <div class="slide">Some notes </div>
+      <div class="title">ONE</div>
+      <audio id="beep" controls preload="auto">
+        <source src="https://hii-mag.com/audio/fx/real/HII_UI_realsounds_play.wav" controls>
+        </source>
+      </audio>
+    </div>
+    <div class="card">
+      <div class="slide">Some notes </div>
+      <div class="title">ONE</div>
+      <audio id="beep" controls preload="auto">
+        <source src="audio/beep.mp3" controls>
+        </source>
+        <source src="audio/beep.ogg" controls>
+        </source>
+      </audio>
+    </div>
+  </div>
+
+  <script>
+    const play = $("#play")[0];
+    $(".card").click((event) => {
+      play.play();
+      const elem = $(event.target);
+      elem.parent().find("#song")[0].play();
+    });
+    $(".card").hover((event) => {
+      console.log("hover");
+      const card = $(event.target);
+      card.find("#song-preview")[0].play();
+    });
+  </script>
+
+</body>
+
+</html>
